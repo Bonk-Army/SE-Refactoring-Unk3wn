@@ -24,7 +24,7 @@ public class MovieTest {
 
     @Test
     public void setPriceCode() {
-        int newPriceCode = 5;
+        int newPriceCode = 2;
         testMovie.setPriceCode(newPriceCode);
         assertEquals(newPriceCode,testMovie.getPriceCode());
     }
