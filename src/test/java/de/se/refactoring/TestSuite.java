@@ -7,5 +7,5 @@ import org.junit.runner.RunWith;
 @RunWith(JUnitPlatform.class)
 @SelectPackages("de.se.refactoring")
 public class TestSuite {
-
+    //Starting all Tests in Package "de.se.refactoring"
 }

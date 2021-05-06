@@ -46,6 +46,7 @@ class Customer {
         return result;
     }
 
+    //One Commit to Far, so first Step was already DONE :)
     private double amountFor(Rental each) {
         double thisAmount = 0;
         switch (each.getMovie().getPriceCode()) {
