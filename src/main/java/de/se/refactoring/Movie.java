@@ -1,4 +1,4 @@
-package java;
+package de.se.refactoring;
 
 public class Movie {
     public static final int CHILDRENS = 2;

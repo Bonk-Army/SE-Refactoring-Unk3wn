@@ -1,4 +1,4 @@
-package java;
+package de.se.refactoring;
 
 import java.lang.*;
 import java.util.*;
