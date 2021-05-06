@@ -1,3 +1,5 @@
+package de.java.se.refactoring;
+
 class Rental {
     private Movie movie;
     private int daysRented;
