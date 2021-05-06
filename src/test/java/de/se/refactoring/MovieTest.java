@@ -7,10 +7,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class MovieTest {
 
-    final String MOVIETITEL = "Titel for Movie";
-    final int PRICECODE = 2;
+    private final String MOVIETITEL = "Titel for Movie";
+    private final int PRICECODE = 2;
 
-    Movie testMovie;
+    private Movie testMovie;
 
     @BeforeEach
     public void setUp() {

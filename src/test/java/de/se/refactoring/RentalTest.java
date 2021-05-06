@@ -6,12 +6,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RentalTest {
 
-    final String MOVIETITEL = "I am an Movie";
-    final int PRICECODE = 2;
-    final int RENTINGDAYS = 15;
+    private final String MOVIETITEL = "I am an Movie";
+    private final int PRICECODE = 2;
+    private final int RENTINGDAYS = 15;
 
-    Movie movieForTesting;
-    Rental rentalForTesting;
+    private Movie movieForTesting;
+    private Rental rentalForTesting;
 
     @BeforeEach
     public void setUp() {

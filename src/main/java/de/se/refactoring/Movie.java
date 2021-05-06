@@ -1,9 +1,9 @@
 package de.se.refactoring;
 
-import de.se.refactoring.Price.ChildrensPrice;
-import de.se.refactoring.Price.NewReleasePrice;
-import de.se.refactoring.Price.Price;
-import de.se.refactoring.Price.RegularPrice;
+import de.se.refactoring.price.ChildrensPrice;
+import de.se.refactoring.price.NewReleasePrice;
+import de.se.refactoring.price.Price;
+import de.se.refactoring.price.RegularPrice;
 
 public class Movie {
     public static final int CHILDRENS = 2;
