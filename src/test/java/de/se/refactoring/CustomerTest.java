@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CustomerTest {
+public class CustomerTest {
 
     final String CUSTOMERNAME = "CustomerName";
     final String MOVIETITEL = "I am an Movie";
@@ -23,24 +23,24 @@ class CustomerTest {
     Customer customerForTesting;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         customerForTesting = new Customer(CUSTOMERNAME);
         movieForTesting = new Movie(MOVIETITEL,PRICECODE);
         rentalForTesting = new Rental(movieForTesting,RENTINGDAYS);
     }
 
     @Test
-    void addRental() {
+    public void addRental() {
         customerForTesting.addRental(rentalForTesting);
     }
 
     @Test
-    void getName() {
+    public void getName() {
         assertEquals(CUSTOMERNAME,customerForTesting.getName());
     }
 
     @Test
-    void statement() {
+    public void statement() {
         customerForTesting.addRental(rentalForTesting);
         assertEquals(RESULTSTRING,customerForTesting.statement());
     }
