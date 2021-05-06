@@ -3,7 +3,8 @@ package de.se.refactoring;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 public class CustomerTest {
 
@@ -24,15 +25,13 @@ public class CustomerTest {
                                 "<P>You owe <EM>19.5</EM><P>\n"+
                                 "On this rental you earned <EM>"+RENTINGPOINTS+"</EM> frequent renter points<P>";
 
-    private Movie movieForTesting;
     private Rental rentalForTesting;
     private Customer customerForTesting;
 
     @BeforeEach
     public void setUp() {
         customerForTesting = new Customer(CUSTOMERNAME);
-        movieForTesting = new Movie(MOVIETITEL,PRICECODE);
-        rentalForTesting = new Rental(movieForTesting,RENTINGDAYS);
+        rentalForTesting = new Rental(new Movie(MOVIETITEL,PRICECODE),RENTINGDAYS);
     }
 
     @Test
