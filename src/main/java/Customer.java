@@ -1,4 +1,4 @@
-package de.java.se.refactoring;
+package java;
 
 import java.lang.*;
 import java.util.*;
@@ -19,7 +19,7 @@ class Customer {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
         Enumeration enum_rentals = rentals.elements();
-        String result = "de.java.se.refactoring.Rental Record for " + this.getName() + "\n";
+        String result = "java.Rental Record for " + this.getName() + "\n";
         result += "\t" + "Title" + "\t" + "\t" + "Days" + "\t" + "Amount" + "\n";
 
         while (enum_rentals.hasMoreElements()) {

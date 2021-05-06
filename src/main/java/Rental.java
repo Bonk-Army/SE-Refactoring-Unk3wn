@@ -1,4 +1,4 @@
-package de.java.se.refactoring;
+package java;
 
 class Rental {
     private Movie movie;
