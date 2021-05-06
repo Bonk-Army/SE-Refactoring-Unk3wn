@@ -24,9 +24,9 @@ public class CustomerTest {
                                 "<P>You owe <EM>19.5</EM><P>\n"+
                                 "On this rental you earned <EM>"+RENTINGPOINTS+"</EM> frequent renter points<P>";
 
-    Movie movieForTesting;
-    Rental rentalForTesting;
-    Customer customerForTesting;
+    private Movie movieForTesting;
+    private Rental rentalForTesting;
+    private Customer customerForTesting;
 
     @BeforeEach
     public void setUp() {

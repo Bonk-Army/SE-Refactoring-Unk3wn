@@ -19,7 +19,6 @@ class Customer {
     }
 
     public String statement() {
-        double totalAmount = 0;
         int frequentRenterPoints = 0;
         Enumeration enum_rentals = rentals.elements();
         String result = "java.Rental Record for " + this.getName() + "\n";
