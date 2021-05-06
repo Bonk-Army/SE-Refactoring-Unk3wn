@@ -1,3 +1,4 @@
 /out/
 /.idea/
-/SE-Refactoring.iml
+*/SE-Refactoring.iml
+/target/
