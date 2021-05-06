@@ -41,25 +41,8 @@ public class Movie {
         return title;
     }
 
-    //One Commit to Far, so first Step was already DONE :)
-    public double getCharge(int getDaysRented) {
-        double rentalAmount = 0;
-        switch (getPriceCode()) {
-            case Movie.REGULAR:
-                rentalAmount += 2;
-                if (getDaysRented > 2)
-                    rentalAmount += (getDaysRented - 2) * 1.5;
-                break;
-            case Movie.NEW_RELEASE:
-                rentalAmount += getDaysRented * 3;
-                break;
-            case Movie.CHILDRENS:
-                rentalAmount += 1.5;
-                if (getDaysRented > 3)
-                    rentalAmount += (getDaysRented - 3) * 1.5;
-                break;
-        }
-        return rentalAmount;
+    public double getCharge(int daysRented) {
+        return price.getCharge(daysRented);
     }
 
     int getFrequentRenterPoints(int daysRented) {
